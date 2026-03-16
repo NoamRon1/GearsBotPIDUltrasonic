@@ -48,6 +48,7 @@ while abs(error) > 1:
         
     tank_drive.on(speed, speed)
     error = ultrasonic_sensor_in2.distance_centimeters - SP
-    
+
+tank_drive.stop()
 print(f"Arrived! distance: {ultrasonic_sensor_in2.distance_centimeters}")
     
